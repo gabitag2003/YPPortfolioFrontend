@@ -1,0 +1,9 @@
+.row{
+    padding: 20px;
+    background-color: #50a8b4;
+}
+
+.contenedor{
+    width: auto;
+    display: inline-block;
+}
