@@ -1,11 +1,11 @@
+
 .row{
+    background-color: #a1b5cb;
     padding: 20px;
-    background-color: #50a8b4;
 }
 
-div{
-    background:  #50a8b4 ;
-}
-h1,h3{
-    display: inline;
+.circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -1,21 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+import { NewskillComponent } from './components/skills/newskill.component';
+import { EditskillComponent } from './components/skills/editskill.component';
 
-const routes: Routes = [];
+
+const routes: Routes = [
+  {path:'', component:HomeComponent},
+  {path:'login', component:LoginComponent},
+  {path: 'nuevaexp', component: NewExperienciaComponent},
+  {path: 'editexp/:id', component: EditExperienciaComponent},
+  { path: 'nuevaedu', component: NeweducacionComponent},
+  { path: 'editedu/:id', component: EditeducacionComponent},
+  {path: 'newskill', component: NewskillComponent},
+  {path: 'editskill/:id', component: EditskillComponent},
+
+
+ ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
-
-
-
-// import { NgCircleProgressModule } from 'ng-circle-progress';
-// @NgModule({
-//   imports:  NgCircleProgressModule.forRoot({})],
- 
- 
-// //veras que ahi esta el NgCircle.  Tambien ten en cuenta de que tu app-component.html tenga esta etiqueta:  <router-outlet></router-outlet>
-// Sino te funciona escribeme por email. y entramos en un zoom luisfelipe782006@gmail
