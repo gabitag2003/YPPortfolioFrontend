@@ -1,21 +1,33 @@
 <div class="row">
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/editacercade/1" *ngIf="isLogged">
+            Editar
+        </button>
+    </div>
+
+
     <div
         class= "col-xs-12  col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/rostro.png" class=" img-fluid" id="fotorostro" alt="">
+        <img src={{persona?.img}} class=" img-fluid" id="fotorostro" alt="">
 
     </div>
     
     <div class= "col-xs-12  col-sm-2 col-md-2 col-lg-2">
-        <p id="nombre"> {{persona.nombre}} {{persona.apellido}}</p>
+        <p id="nombre"> {{persona?.nombre}} {{persona?.apellido}}</p>
         <p> Full Stack Developer </p>
     </div>
     <div class= "col-xs-12  col-sm-8 col-md-8 col-lg-8">
 
         <span> 
             <h1> Acerca de mi</h1>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laborum, dignissimos natus dolore animi voluptatibus culpa beatae amet ullam illo, eos vitae autem, alias reprehenderit blanditiis expedita eligendi nemo? A?</p>
+            <p> {{persona?.descripcion}}</p>
         </span>
     </div>
 
 
 </div>
+
+
+
+
+

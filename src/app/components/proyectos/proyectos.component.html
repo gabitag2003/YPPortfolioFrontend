@@ -1,22 +1,32 @@
 <div class="row">
-   <h1>Mis proyectos</h1>
-   <div class="contenedor">
-       <div class="col-sm12 col-md-7 col-lg-7">
-        <h1>e-sales </h1>
-        <p> Desarrollamos un sitio web de  comercio electrónico front end, basado en Angular de alto tráfico con diseño innovador basado en UIX. Totalmente integrado con los sistemas CRM y ERP internos. </p>
-       </div>
-      
-       <div class="col-sm12 col-md-7 col-lg-7" >
-        <h1>Sistema de Monitoreo </h1>
-        <p> Desarrollamos un Back End basado en API rest con la tecnología Spring Boot para power datos de monitoreo a aplicaciones distribuídas, también el desarrollo de interfaces entres sistemas de gestión para automatizar procesos.</p>
-       </div>
-
-
-
-
-   </div>
-
-
-
-
-</div>
+    <h1>Proyectos</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged">
+            Agregar Proyecto
+        </button>
+    </div>
+  
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Proyectos of proyectos">
+                    <td>
+                        <h2>{{Proyectos.nombreP}}</h2>
+                    </td>
+                    <td>{{Proyectos.descripcionP}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editproyectos/{{Proyectos.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Proyectos.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  
+  </div>
+  
