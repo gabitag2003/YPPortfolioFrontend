@@ -1,32 +1,45 @@
 <div class="row">
   <h1>Educacion</h1>
   <div class="col-lg-2">
-      <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
-          Agregar Educacion
-      </button>
+    <button
+      type="button"
+      class="btn btn-light"
+      routerLink="/nuevaedu"
+      *ngIf="isLogged"
+    >
+      <i class="fa fa-plus" aria-hidden="true"></i>
+    </button>
   </div>
 
-  <div class="col lg 1"></div>
-  <div class="col-lg-11">
-      <table class="table">
-          <tbody>
-              <tr *ngFor="let Educacion of educacion">
-                  <td>
-                      <h2>{{Educacion.nombreE}}</h2>
-                  </td>
-                  <td>{{Educacion.descripcionE}}</td>
-                  <td *ngIf="isLogged">
-                      <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
-                          <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                  </td>
-                  <td *ngIf="isLogged">
-                      <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                          <i class="bi bi-trash-fill"></i> BORRAR</button>
-                  </td>
-              </tr>
-          </tbody>
-      </table>
+  <div class="table-reponsive" id="no-more-tables">
+        <table class="table">
+      <tbody>
+        <tr *ngFor="let Educacion of educacion">
+          <td>
+            <h2>{{ Educacion.nombreE }}</h2>
+          </td>
+          <td><i class="fas fa-calendar mr-2"></i> {{ Educacion.anioE }}</td>
+          <td>{{ Educacion.descripcionE }}</td>
+          <td *ngIf="isLogged">
+            <button
+              type="button"
+              class="btn btn-light"
+              routerLink="/editedu/{{ Educacion.id }}"
+            >
+              <span class="bi bi-pencil-fill"></span>
+            </button>
+          </td>
+          <td *ngIf="isLogged">
+            <button
+              type="button"
+              class="btn btn-light"
+              (click)="delete(Educacion.id)"
+            >
+              <span class="bi bi-trash-fill"></span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-
 </div>
-

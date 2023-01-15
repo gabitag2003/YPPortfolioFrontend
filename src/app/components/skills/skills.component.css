@@ -1,7 +1,18 @@
 
 .row{
-    background-color: #a1b5cb;
+    
+    background-color: #50a8b4 ;
     padding: 20px;
+    margin-bottom: 15px ;
+    margin-top: 15px;
+    border-top-left-radius: 60px 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px ;
+    margin-left: 2px ;
+    margin-right: 2px;
+
+
 }
 
 .circulo{
@@ -9,3 +20,5 @@
     flex-direction: column;
     align-items: center;
 }
+
+

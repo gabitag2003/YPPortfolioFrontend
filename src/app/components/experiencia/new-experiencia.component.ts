@@ -10,6 +10,7 @@ import { SExperienciaService } from 'src/app/service/sexperiencia.service';
 })
 export class NewExperienciaComponent implements OnInit {
   puestoE: string = '';
+  anioE: string = '';
   descripcionE: string = '';
 
   constructor(private sExperiencia: SExperienciaService, private router: Router) { }
@@ -18,7 +19,7 @@ export class NewExperienciaComponent implements OnInit {
   }
 
   onCreate(): void {
-    const expe = new Experiencia(this.puestoE, this.descripcionE);
+    const expe = new Experiencia(this.puestoE, this.anioE, this.descripcionE);
     this.sExperiencia.save(expe).subscribe(
       data => {
         alert("Experiencia añadida");
@@ -31,32 +32,4 @@ export class NewExperienciaComponent implements OnInit {
   }
 
 
-  /* onCreate(): void {
-    const expe = new Experiencia(this.puestoE, this.descripcionE);
-    this.SExperiencia.save(expe).subscribe({
-      next: (data) => {
-      alert('Experiencia agregada');
-      this.router.navigate(['']);
-      },
-      error: (err) => {
-      alert('Fallo');
-      this.router.navigate(['']);
-      }
-      });
-  } */
-}  
-      
-    
-    
-    
-    
-    /* subscribe(
-      data => {
-        alert("Experiencia añadida");
-        this.router.navigate(['']);
-      }, err => {
-        alert("Falló");
-        this.router.navigate(['']);
-      }
-    ) */
- 
+}

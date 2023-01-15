@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    background:#2b3131  ;
+
 
 }
 .redes{
@@ -16,10 +18,17 @@
     width: 150px;
 }
 
+#logoYoProgramo{
+    width: 35px ;
+   
+}
+
 img{
     width: 50px;
     
     }
+
+
 @media(max-width: 575px){
     .container{
         flex-direction: column;

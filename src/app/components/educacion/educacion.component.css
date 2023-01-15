@@ -1,10 +1,30 @@
-.row{
+.row{ 
+    background:#50a8b4 ;
     padding: 20px;
+    border-radius: 60px;
+    margin-bottom: 15 px;
+    margin-left: 2px ;
+    margin-right: 2px;
+
+   
 }
 
-div{
-    background: #50a8b4  ;
-}
+
+
+/* .i {
+    color: black;
+    font-size: 60p;
+    margin: 10px;
+} */
 h1,h3{
     display: inline;
+}
+
+
+@media only screen and (max-width: 800px){
+    #no-more-tables tbody, #no-more-tables tr, #no-more-tables td{
+        display: block
+       
+    }
+  
 }

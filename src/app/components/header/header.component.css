@@ -1,8 +1,16 @@
-div{
-    background-color:#50a8b4 ;
+.row{
+    
+   
+
 }
 
 app-redes{
     float:right;
     margin-top: 25px;
+}
+
+@media(max-width: 575px){
+    .card{
+        flex-direction: column;
+    }
 }

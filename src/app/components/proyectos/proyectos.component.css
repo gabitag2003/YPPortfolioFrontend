@@ -1,9 +1,17 @@
 .row{
+    border-radius: 60px;
     padding: 20px;
     background-color: #50a8b4;
+    margin-bottom: 15px;
+  
 }
 
-.contenedor{
-    width: auto;
-    display: inline-block;
+
+
+@media only screen and (max-width: 800px){
+    #no-more-tables tbody, #no-more-tables tr, #no-more-tables td{
+        display: block
+       
+    }
+  
 }

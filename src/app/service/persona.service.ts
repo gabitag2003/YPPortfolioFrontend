@@ -9,6 +9,9 @@ import {persona} from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
+  
+  //URL :'http://localhost:8080/personas/';
+  //URL= 'https://proyectobackend.onrender.com/personas/';
   URL = environment.URL + 'personas/';
 
   constructor(private httpClient: HttpClient) { }
@@ -22,9 +25,9 @@ export class PersonaService {
     return this.httpClient.get<persona>(this.URL + `detail/${id}`);
   }
 
-  /*public save(educacion: persona): Observable<any>{
+  public save(Persona: persona): Observable<any>{
     return this.httpClient.post<any>(this.URL + 'create', persona);
-  }*/
+  }
 
   public update(id: number, Persona: persona): Observable<any>{
     return this.httpClient.put<any>(this.URL + `update/${id}`, persona);

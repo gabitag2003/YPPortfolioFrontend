@@ -1,0 +1,63 @@
+[
+{"type":"header","version":"4.8.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"bohk2kvzsodiqieuctfs"},
+{"type":"table","name":"educacion","database":"bohk2kvzsodiqieuctfs","data":
+[
+{"id":"1","anioe":"2003","descripcione":"Analista en Administración de Empresas, especialización contable","nombree":"Universidad Tecnológica Nacional"},
+{"id":"2","anioe":"2021","descripcione":"Curso Argentina Programa 1ra Etapa","nombree":"INTI"},
+{"id":"3","anioe":"2022","descripcione":"Programación desde cero. Lógica de programación","nombree":"EGG Educación"}
+]
+}
+,{"type":"table","name":"experiencia","database":"bohk2kvzsodiqieuctfs","data":
+[
+{"id":"1","anioe":"1999-2010","descripcione":"Encargada de sucursal.Comercialización servicios financieros","puestoe":"Compañía Financiera Argentina SA"},
+{"id":"2","anioe":"2010-Actualidad","descripcione":"Oficial de negocios. ","puestoe":"Banco Hipotecario Nacional SA"}
+]
+}
+,{"type":"table","name":"hys","database":"bohk2kvzsodiqieuctfs","data":
+[
+{"id":"1","nombre":"INGLES","porcentaje":"65"},
+{"id":"2","nombre":"BOOTSTRAP","porcentaje":"50"},
+{"id":"3","nombre":"SOFT SKILLS","porcentaje":"90"},
+{"id":"4","nombre":"CSS","porcentaje":"50"},
+{"id":"5","nombre":"HTML","porcentaje":"50"},
+{"id":"6","nombre":"JAVASCRIPT","porcentaje":"50"}
+]
+}
+,{"type":"table","name":"persona","database":"bohk2kvzsodiqieuctfs","data":
+[
+{"id":"1","apellido":"Gastaldi","descripcion":"Full Stack Developer Jr","img":null,"nombre":"Gabriela Andrea"},
+{"id":"2","apellido":"Gastaldi","descripcion":"Full Stack Developer Jr","img":"url de la imagen","nombre":"Gabriela A "},
+{"id":"3","apellido":"Gastaldi","descripcion":"Full Stack Developer Jr","img":"url imagen","nombre":"Gabriela "},
+{"id":"4","apellido":"Gastaldi","descripcion":"Full Stack Developer Jr.","img":"url img","nombre":"Gabriela A."}
+]
+}
+,{"type":"table","name":"proyectos","database":"bohk2kvzsodiqieuctfs","data":
+[
+{"id":"1","aniop":"2022","descripcionp":"Creamos un sitio web con frontend tecnología angular y backend arquitectura API Rest con Springboot","nombrep":"Portfolio Argentina Programa "}
+]
+}
+,{"type":"table","name":"rol","database":"bohk2kvzsodiqieuctfs","data":
+[
+{"id":"1","rol_nombre":"ROLE_ADMIN"},
+{"id":"2","rol_nombre":"ROLE_USER"}
+]
+}
+,{"type":"table","name":"usuario","database":"bohk2kvzsodiqieuctfs","data":
+[
+{"id":"1","email":"notiene@notiene.com","nombre":"admin","nombre_usuario":"admin","password":"$2a$10$ip9DXKxsF8qcyOHxF\/1FUOXaYF5Gt7y\/nIZAfSWTkJrRieLu668Ti"},
+{"id":"2","email":"email.com","nombre":"gabita","nombre_usuario":"gabita","password":"$2a$10$rhERbhcujF9pW47DfVhBPusHaauHbF4uShjIqHtyBFXPIoT6BHxlK"},
+{"id":"3","email":"notiene@gmail","nombre":"gabi","nombre_usuario":"gabi","password":"$2a$10$tRNd9gK9ocndwtSGWSLnVO\/uQP3KGfn1Of5QYL0zExT9vcwBETG5C"}
+]
+}
+,{"type":"table","name":"usuario_rol","database":"bohk2kvzsodiqieuctfs","data":
+[
+{"usuario_id":"1","rol_id":"1"},
+{"usuario_id":"2","rol_id":"1"},
+{"usuario_id":"3","rol_id":"1"},
+{"usuario_id":"1","rol_id":"2"},
+{"usuario_id":"2","rol_id":"2"},
+{"usuario_id":"3","rol_id":"2"}
+]
+}
+]

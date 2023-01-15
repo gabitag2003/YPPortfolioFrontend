@@ -9,7 +9,10 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ProyectosService {
-  URL = environment.URL + 'proyectos/';
+
+  //URL= 'http://localhost:8080/proyectos/';
+   //URL= 'https://proyectobackend.onrender.com/proyectos/';
+   URL = environment.URL + 'proyectos/';
 
   constructor(private httpClient : HttpClient) { }
 

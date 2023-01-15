@@ -71,6 +71,7 @@ import { EditproyectosComponent } from './components/proyectos/editproyectos.com
     provideStorage(() => getStorage()),
 
 
+
   ],
   providers: [
     interceptorProvider,

@@ -1,4 +1,9 @@
-#fondostars{
+
+ #fondostars{
+
     width: 100%;
     height: 600px;
-}
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+} 
+

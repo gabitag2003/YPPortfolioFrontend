@@ -1,16 +1,22 @@
 .row{ 
+    border-radius: 60px;
     padding: 20px;
-}
-
-div{
+    margin-bottom: 15px;
+    margin-top: 15px ;
     background-color: #50a8b4;
-    text-align: center;
-}
+    /* text-align: center; */
+    margin-left: 2px;
+    margin-right: 2px;
+ }
+
+
+
+
 @media (min-width: 576px){
  #fotorostro {
     position: absolute;
     width: 15%;
-    border-radius:100%;
+    /* border-radius:100%; */
     box-shadow: 3px 3px 3px grey;
     left: 3%;
     top:578px;

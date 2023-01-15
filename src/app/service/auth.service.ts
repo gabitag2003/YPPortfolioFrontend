@@ -12,8 +12,10 @@ import { environment } from 'src/environments/environment';
 })
 
 export class AuthService {
-     URL = environment.URL + 'auth/';
-   // authURL= 'http://localhost:8080/auth/';
+    // URL= 'http://localhost:8080/auth/';
+    //URL='https://proyectobackend.onrender.com/auth/';
+    URL = environment.URL +'auth/';
+  
 
     constructor(private httpClient: HttpClient) {}
     public nuevo (nuevoUsuario : NuevoUsuario): Observable<any>{

@@ -13,12 +13,27 @@ import { PersonaService } from 'src/app/service/persona.service';
 
 export class EditAcercaDeComponent implements OnInit {
 persona: persona = null;
-  constructor(private activatedRouter : ActivatedRoute, private personaService: PersonaService, private router: Router,
-  public imageService:ImageService) { }
 
-  onUpdate():void {
+  constructor(private activatedRouter : ActivatedRoute, private personaService: PersonaService, private router: Router,
+   public imageService:ImageService)
+   { }
+
+   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.persona.img = this.imageService.url
+    this.personaService.detail(id).subscribe({
+      next : (data) =>{
+        this.persona = data;
+      }, error: (err) =>{
+         alert("Error al modificar persona");
+         this.router.navigate(['']);
+      }
+     } )
+  
+    }
+
+    onUpdate():void {
+    const id = this.activatedRouter.snapshot.params['id'];
+     this.persona.img = this.imageService.url
     this.personaService.update(id, this.persona).subscribe(
       data=>{
         this.router.navigate(['']);
@@ -31,26 +46,12 @@ persona: persona = null;
 
   }
 
-
-  uploadImage($event: any){
+   uploadImage($event: any){
     const id = this.activatedRouter.snapshot.params['id'];
     const name =  "perfil_" + id;
     this.imageService.uploadImage($event, name)
 
   }
-
-
-  ngOnInit(): void {
-    const id = this.activatedRouter.snapshot.params['id'];
-    this.personaService.detail(id).subscribe(
-      data =>{
-        this.persona = data;
-      }, err =>{
-         alert("Error al modificar");
-         this.router.navigate(['']);
-      }
-    )
-  } 
 
   
 
